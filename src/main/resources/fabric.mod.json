@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "serenas-mooblooms",
+	"version": "${version}",
+	"name": "Serena's Mooblooms",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/serenas-mooblooms/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.serenas.mooblooms.SerenasMooblooms"
+		],
+		"client": [
+			"net.serenas.mooblooms.SerenasMoobloomsClient"
+		],
+		"fabric-datagen": [
+			"net.serenas.mooblooms.SerenasMoobloomsDataGenerator"
+		]
+	},
+	"mixins": [
+		"serenas-mooblooms.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
